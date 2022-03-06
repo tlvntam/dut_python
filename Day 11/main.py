@@ -94,6 +94,7 @@ import random
 from replit import clear
 
 def play_BJ():
+    clear()
     want_play = input("Want to try BJ type 'y' or 'n':\n ")
     if want_play == "y":
         clear()

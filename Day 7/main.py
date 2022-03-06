@@ -1,8 +1,12 @@
 import random
 from replit import clear
+from art import logo
 
+print(logo)
 word_list = ["conga", "logan", "mango"]
 chosen_word = random.choice(word_list)
+
+# print(chosen_word)
 
 word_blank = []
 for blank in range(0, len(chosen_word)):
@@ -15,7 +19,7 @@ live_reduce = 3
 while not end_game:
     player_guess = input("Let's guess a letter !!! ").lower()
     clear()
-    if player_guess in player_answer:
+    if player_guess in chosen_word:
         print(f"You already guess {player_guess}")
 
     for i in range(len(chosen_word)):
