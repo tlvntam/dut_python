@@ -39,7 +39,7 @@ def game_gtn(player_guess, live_remain, correct_num):
     if player_guess == correct_num:
         print(f"You got it! The answer was {correct_num}")
         print(f"Correct num is: {correct_num}")
-        try_1_more()
+        return
     elif player_guess < correct_num:
         live_remain = live_remaining(live_remain)
         return "Too low"
@@ -48,14 +48,14 @@ def game_gtn(player_guess, live_remain, correct_num):
         return "Too high"
 
 def try_1_more():
+    clear()
     try_again = input("Want to try again? (y/n): ")
     if try_again == "y":
-        clear()
         game_play()
 
     else:
         print("Bai bai")
-        clear()
+
 
 
 print(logo)
