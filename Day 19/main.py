@@ -1,16 +1,34 @@
-# This is a sample Python script.
+from turtle import Turtle, Screen
+from replit import clear
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+tum = Turtle()
+screen = Screen()
 
+def move_forward():
+    tum.forward(10)
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+def move_backward():
+    tum.backward(10)
 
+def move_left():
+    tum.left(10)
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+def move_right():
+    tum.right(10)
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+def move_clear():
+    tum.clear()
+    tum.penup()
+    tum.home()
+    tum.pendown()
+
+screen.listen()
+
+screen.onkey(key="w", fun=move_forward)
+screen.onkey(key="s", fun=move_backward)
+screen.onkey(key="a", fun=move_left)
+screen.onkey(key="d", fun=move_right)
+screen.onkey(key="c", fun=move_clear)
+
+screen.exitonclick()
+
