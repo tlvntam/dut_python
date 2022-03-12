@@ -1,16 +1,29 @@
-# This is a sample Python script.
+"""Inheritance"""
+# class Animal:
+#     def __init__(self):
+#         self.num_eyes = 2
+#
+#     def breathe(self):
+#         print("Inhale, exhale")
+#
+# class Fish(Animal):
+#     def __init__(self):
+#         super().__init__()
+#
+#     def breathe(self):
+#         super().breathe()
+#         print("doing in the underwater")
+#
+#     def swim(self):
+#         print("moving in water")
+#
+#
+# nemo = Fish()
+# nemo.breathe()
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+"""Slicing"""
+import string
+alphabet = string.ascii_letters
+print(alphabet[2:5])
+print(alphabet[::2])
+print(alphabet[::-1])
