@@ -1,16 +1,60 @@
-# This is a sample Python script.
+from turtle import Turtle, Screen
+import time
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+from scoreboard import Scoreboard
+from paddle import Paddle
+from ball import Ball
+""""Set up screen"""
+screen = Screen()
+screen.setup(width=800, height=600)
+screen.bgcolor("black")
+screen.title("Pong Game")
+screen.tracer(0)
+"""Set paddle"""
+r_paddle = Paddle((350, 0))
+l_paddle = Paddle((-350, 0))
+
+scoreboard = Scoreboard()
+
+"""Paddle move"""
+screen.listen()
+
+screen.onkey(r_paddle.go_up, "Up")
+screen.onkey(r_paddle.go_down, "Down")
+
+screen.onkey(l_paddle.go_up, "w")
+screen.onkey(l_paddle.go_down, "s")
+
+"""Set Ball"""
+ball = Ball((0, 0))
+
+"""Ball move"""
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+game_on = True
+
+while game_on:
+    time.sleep(ball.move_speed)
+    screen.update()
+    ball.ball_move()
+
+    if ball.ycor() > 270 or ball.ycor() < -280:
+        ball.ball_bounce()
+
+    if ball.distance(r_paddle) < 50 and ball.xcor() > 320 or ball.distance(l_paddle) < 50 and ball.xcor() < -320:
+        ball.ball_bounce_paddle()
+
+    if ball.xcor() > 350:
+        ball.refresh()
+        scoreboard.l_score_plus()
+
+    if ball.xcor() < -350:
+        ball.refresh()
+        scoreboard.r_score_plus()
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+    if scoreboard.score_l == 2 or scoreboard.score_r == 2:
+        scoreboard.game_over()
+        ball.hideturtle()
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+screen.exitonclick()
