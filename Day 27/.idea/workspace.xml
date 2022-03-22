@@ -2,32 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e6c810e-c751-42da-b1df-f657fe204123" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Day 26/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Day 26/.idea/Day 26.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Day 26/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Day 26/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Day 26/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Day 26/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Day 26/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Day 26/NATO-alphabet-start/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Day 26/NATO-alphabet-start/nato_phonetic_alphabet.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Day 26/day-26-3-exercise/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Day 26/day-26-3-exercise/file1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Day 26/day-26-3-exercise/file2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Day 26/day-26-3-exercise/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Day 26/mainday26.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/Day 27.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kmconvert.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/playground.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Day 25/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Day 25/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Day 25/main.py" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day 28/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
