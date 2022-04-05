@@ -1,16 +1,31 @@
-# This is a sample Python script.
+"""API - Application Programming Interface"""
+import requests
+from datetime import datetime
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+# response = requests.get(url="http://api.open-notify.org/iss-now.json")
+# print(response.status_code)
+"""httpstatuses.com"""
+# response.raise_for_status()
+#
+# data = response.json()["iss_position"]
+# longitude = data["longitude"]
+# latitude = data["latitude"]
+#
+# iss_position = (longitude,latitude)
+# print(iss_position)
 
+MY_LAT = 16.054407
+MY_LONG = 108.202164
+parameters = {
+    "lat": MY_LAT,
+    "lng": MY_LONG,
+    "formatted": 0,
+}
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+response = requests.get(url="https://api.sunrise-sunset.org/json", params=parameters).json()
+# print(response)
+sunrise = response["results"]["sunrise"].split("T")
+print(sunrise)
 
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+time_now = datetime.now()
+print(time_now.hour)
